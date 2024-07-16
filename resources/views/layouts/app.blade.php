@@ -14,8 +14,10 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
     <!-- Scripts -->
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+
     @viteReactRefresh
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    <script src="{{ mix('js/app.js') }}" defer></script>
 </head>
 <body>
     <div id="app">
