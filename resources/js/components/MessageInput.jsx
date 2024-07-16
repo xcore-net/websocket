@@ -19,6 +19,7 @@ const MessageInput = ({ rootUrl }) => {
             alert("Please enter a message!");
             return;
         }
+        
 
         messageRequest(message);
         setMessage("");
