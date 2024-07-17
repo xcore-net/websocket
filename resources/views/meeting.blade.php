@@ -3,7 +3,7 @@
 <head>
     <title>Live Meeting</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src=@vite(['resources/js/app.js']) defer></script>
 </head>
 <body>
     <div id="app">

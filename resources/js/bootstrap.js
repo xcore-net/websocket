@@ -49,12 +49,7 @@ window.Pusher = Pusher;
 
 window.Echo = new Echo({
     broadcaster: 'pusher',
-    key: 'e989e6aa79d7b9aa6ba9',
-    cluster: 'eu',
+    key: import.meta.env.VITE_PUSHER_APP_KEY,
+    cluster:  import.meta.env.VITE_PUSHER_APP_CLUSTER,
     encrypted: true
 });
-
-// PUSHER_APP_ID="1830700"
-// PUSHER_APP_KEY="e989e6aa79d7b9aa6ba9"
-// PUSHER_APP_SECRET="83ff9980dfb9085edf3a"
-// PUSHER_APP_CLUSTER="eu"
